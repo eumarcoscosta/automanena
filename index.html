@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Auto Manena — Pintura Automotiva Profissional</title>
+<title>Auto Manena — Pintura Automotiva Profissional em Alcabideche</title>
+
+<!-- SEO -->
+<meta name="description" content="Auto Manena — especialistas em pintura automotiva, polimento, funilaria e pintura de jantes em Alcabideche, Cascais. Qualidade profissional em cada detalhe. Peça o seu orçamento.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://automanena.vercel.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://automanena.vercel.app/">
+<meta property="og:title" content="Auto Manena — Pintura Automotiva Profissional em Alcabideche">
+<meta property="og:description" content="Especialistas em pintura automotiva, polimento, funilaria e pintura de jantes. Alcabideche, Cascais. Peça o seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://automanena.vercel.app/images/hero-bg-1.webp">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Auto Manena">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto Manena — Pintura Automotiva Profissional">
+<meta name="twitter:description" content="Especialistas em pintura automotiva, polimento e funilaria em Alcabideche.">
+<meta name="twitter:image" content="https://automanena.vercel.app/images/hero-bg-1.webp">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutoRepair",
+  "name":"Auto Manena",
+  "description":"Especialistas em pintura automotiva, polimento, funilaria e pintura de jantes em Alcabideche, Cascais.",
+  "url":"https://automanena.vercel.app/",
+  "telephone":"+351934909039",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Parque Industrial JE, R. Campos Verdes 286 Armazém F",
+    "addressLocality":"Alcabideche",
+    "postalCode":"2645-423",
+    "addressCountry":"PT"
+  },
+  "openingHours":"Mo-Fr 09:00-18:00",
+  "image":"https://automanena.vercel.app/images/hero-bg-1.webp",
+  "priceRange":"€€"
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo-automanena.png">
+<link rel="apple-touch-icon" href="images/logo-automanena.png">
+
+<!-- Performance: preload LCP hero -->
+<link rel="preload" as="image" href="images/hero-bg-1.webp" fetchpriority="high">
+<link rel="dns-prefetch" href="https://wa.me">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
@@ -466,15 +517,15 @@ footer{background:var(--dark3);padding:50px 5% 24px}
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#" class="nav-logo"><img src="images/logo-automanena.png" alt="Auto Manena" style="mix-blend-mode:screen;filter:brightness(1.1)"></a>
+  <a href="/" class="nav-logo"><img src="images/logo-automanena.png" alt="Auto Manena" style="mix-blend-mode:screen;filter:brightness(1.1)"></a>
   <ul class="nav-links">
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#servicos">Serviços</a></li>
     <li><a href="#diferenciais">Diferenciais</a></li>
     <li><a href="#faq">Dúvidas</a></li>
   </ul>
-  <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="btn-red nav-cta" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
-  <div class="hamburger" onclick="mobOpen()"><span></span><span></span><span></span></div>
+  <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="btn-red nav-cta" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
+  <div class="hamburger" onclick="mobOpen()" role="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></div>
 </nav>
 
 <!-- MOBILE MENU -->
@@ -486,7 +537,7 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   <a href="#diferenciais" onclick="mobClose()">Diferenciais</a>
   <a href="#faq" onclick="mobClose()">Dúvidas</a>
   <a href="#mapa" onclick="mobClose()">Morada</a>
-  <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." onclick="mobClose()" class="btn-red" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
+  <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." onclick="mobClose()" class="btn-red" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
 </div>
 
 <!-- HERO SLIDER -->
@@ -538,8 +589,8 @@ footer{background:var(--dark3);padding:50px 5% 24px}
 <section id="sobre">
   <div class="sobre-wrap">
     <div class="sobre-imgs">
-      <img src="images/sobre-mercedes.png" alt="Mercedes Auto Manena" class="rv-l">
-      <img src="images/sobre-polimento.png" alt="Polimento profissional" class="rv-r">
+      <img src="images/sobre-mercedes.png" alt="Mercedes Auto Manena" class="rv-l" loading="lazy">
+      <img src="images/sobre-polimento.png" alt="Polimento profissional" class="rv-r" loading="lazy">
     </div>
     <div class="sobre-text rv-r">
       <span class="sec-sub">Sobre nós</span>
@@ -586,16 +637,16 @@ footer{background:var(--dark3);padding:50px 5% 24px}
     <div class="svc-header-right rv">
       <p class="sec-desc" style="margin-bottom:10px">Da reparação mais simples à pintura completa, entregamos qualidade em cada detalhe do seu veículo.</p>
       <button class="btn-svc-all" onclick="openSvcModal()">Ver todos os serviços</button>
-      <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+pedir+um+or%C3%A7amento." class="btn-red svc-mob-cta" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
+      <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+pedir+um+or%C3%A7amento." class="btn-red svc-mob-cta" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
     </div>
   </div>
   <div class="s-grid">
     <div class="svc">
       <div class="svc-serial">01</div>
-      <img src="images/svc-pintura-completa.png" alt="Pintura Completa">
+      <img src="images/svc-pintura-completa.png" alt="Pintura Completa" loading="lazy">
       <div class="svc-content">
         <div class="svc-desc">Pintura completa com tinta automóvel de alta durabilidade. Preparação perfeita, acabamento impecável e cor que dura anos.</div>
-        <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+Completa+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
+        <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+Completa+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
       </div>
       <div class="svc-overlay"></div>
       <div class="svc-title"><h3>Pintura Completa</h3></div>
@@ -603,10 +654,10 @@ footer{background:var(--dark3);padding:50px 5% 24px}
     </div>
     <div class="svc">
       <div class="svc-serial">02</div>
-      <img src="images/svc-pintura-partes.png" alt="Pintura de Partes">
+      <img src="images/svc-pintura-partes.png" alt="Pintura de Partes" loading="lazy">
       <div class="svc-content">
         <div class="svc-desc">Pintura localizada de peças e painéis com perfeita combinação de cor. Reparamos a zona afetada sem necessidade de pintura total.</div>
-        <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+de+Partes+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
+        <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+de+Partes+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
       </div>
       <div class="svc-overlay"></div>
       <div class="svc-title"><h3>Pintura de Partes</h3></div>
@@ -614,10 +665,10 @@ footer{background:var(--dark3);padding:50px 5% 24px}
     </div>
     <div class="svc">
       <div class="svc-serial">03</div>
-      <img src="images/svc-polimento.png" alt="Polimento">
+      <img src="images/svc-polimento.png" alt="Polimento" loading="lazy">
       <div class="svc-content">
         <div class="svc-desc">Polimento profissional que remove riscos, oxidação e opacidade. A sua viatura com brilho de showroom em poucas horas.</div>
-        <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Polimento+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
+        <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Polimento+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
       </div>
       <div class="svc-overlay"></div>
       <div class="svc-title"><h3>Polimento</h3></div>
@@ -625,10 +676,10 @@ footer{background:var(--dark3);padding:50px 5% 24px}
     </div>
     <div class="svc">
       <div class="svc-serial">04</div>
-      <img src="images/svc-jantes.png" alt="Pintura de Jantes">
+      <img src="images/svc-jantes.png" alt="Pintura de Jantes" loading="lazy">
       <div class="svc-content">
         <div class="svc-desc">Recuperamos e pintamos jantes com acabamento profissional. Eliminamos riscos, oxidação e danos, devolvendo o visual original ou personalizando ao seu gosto.</div>
-        <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+de+Jantes+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
+        <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+Pintura+de+Jantes+da+minha+viatura." class="btn-red" data-hover="Solicitar"><span>Solicitar</span></a>
       </div>
       <div class="svc-overlay"></div>
       <div class="svc-title"><h3>Pintura de Jantes</h3></div>
@@ -639,7 +690,7 @@ footer{background:var(--dark3);padding:50px 5% 24px}
 
 <!-- CAR STRIP -->
 <div id="car-strip">
-  <img src="images/hero-slide-main.png" alt="Auto Manena">
+  <img src="images/hero-slide-main.png" alt="Auto Manena" loading="lazy">
 </div>
 
 <!-- DEPOIMENTOS -->
@@ -800,27 +851,27 @@ footer{background:var(--dark3);padding:50px 5% 24px}
 <!-- LOGO CAROUSEL -->
 <div id="logos">
   <div class="logos-track" id="logoTrack">
-    <div class="logo-item"><img src="images/carousel-1.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-2.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-3.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-4.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-5.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-6.webp" alt=""></div>
-    <div class="logo-item"><img src="images/brand-mercedes.png" alt="Mercedes" style="filter:invert(1) grayscale(1)"></div>
-    <div class="logo-item"><img src="images/brand-bmw.png" alt="BMW" style="filter:invert(1) grayscale(1)"></div>
-    <div class="logo-item"><img src="images/brand-citroen.png" alt="Citroën"></div>
-    <div class="logo-item"><img src="images/brand-ds.png" alt="DS Automobiles"></div>
+    <div class="logo-item"><img src="images/carousel-1.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-2.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-3.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-4.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-5.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-6.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/brand-mercedes.png" alt="Mercedes" loading="lazy" style="filter:invert(1) grayscale(1)"></div>
+    <div class="logo-item"><img src="images/brand-bmw.png" alt="BMW" loading="lazy" style="filter:invert(1) grayscale(1)"></div>
+    <div class="logo-item"><img src="images/brand-citroen.png" alt="Citroën" loading="lazy"></div>
+    <div class="logo-item"><img src="images/brand-ds.png" alt="DS Automobiles" loading="lazy"></div>
     <!-- duplicate for infinite loop -->
-    <div class="logo-item"><img src="images/carousel-1.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-2.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-3.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-4.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-5.webp" alt=""></div>
-    <div class="logo-item"><img src="images/carousel-6.webp" alt=""></div>
-    <div class="logo-item"><img src="images/brand-mercedes.png" alt="Mercedes" style="filter:invert(1) grayscale(1)"></div>
-    <div class="logo-item"><img src="images/brand-bmw.png" alt="BMW" style="filter:invert(1) grayscale(1)"></div>
-    <div class="logo-item"><img src="images/brand-citroen.png" alt="Citroën"></div>
-    <div class="logo-item"><img src="images/brand-ds.png" alt="DS Automobiles"></div>
+    <div class="logo-item"><img src="images/carousel-1.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-2.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-3.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-4.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-5.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/carousel-6.webp" alt="" loading="lazy"></div>
+    <div class="logo-item"><img src="images/brand-mercedes.png" alt="Mercedes" loading="lazy" style="filter:invert(1) grayscale(1)"></div>
+    <div class="logo-item"><img src="images/brand-bmw.png" alt="BMW" loading="lazy" style="filter:invert(1) grayscale(1)"></div>
+    <div class="logo-item"><img src="images/brand-citroen.png" alt="Citroën" loading="lazy"></div>
+    <div class="logo-item"><img src="images/brand-ds.png" alt="DS Automobiles" loading="lazy"></div>
   </div>
 </div>
 
@@ -828,7 +879,7 @@ footer{background:var(--dark3);padding:50px 5% 24px}
 <div id="cta">
   <div class="cta-inner">
     <h2>Quer seu carro brilhando como novo?</h2>
-    <a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="btn-outline" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
+    <a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="btn-outline" data-hover="Pedir Orçamento"><span>Pedir Orçamento</span></a>
   </div>
 </div>
 
@@ -1067,7 +1118,7 @@ function closeSvcModalOutside(e){if(e.target===document.getElementById('svcModal
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSvcModal()})
 </script>
 <!-- MOBILE FAB -->
-<a href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="mob-fab">💬 Pedir Orçamento</a>
+<a rel="noopener noreferrer" href="https://wa.me/351934909039?text=Ol%C3%A1%2C+gostaria+de+tirar+d%C3%BAvidas+sobre+a+minha+viatura." class="mob-fab">💬 Pedir Orçamento</a>
 
 <!-- MODAL TODOS OS SERVIÇOS -->
 <div id="svcModal" class="svc-modal" onclick="closeSvcModalOutside(event)">
