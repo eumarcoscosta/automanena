@@ -65,7 +65,8 @@ ul{list-style:none}
   color:var(--white);background:transparent;
   padding:10px 26px;font-size:15px;border-radius:6px;
   position:relative;overflow:hidden;transition:var(--trans);
-  border:1px solid rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.7);
+  animation:outlinePulse 2.4s ease-in-out infinite;
 }
 .btn-outline span{display:block;position:relative;transition:all .3s ease}
 .btn-outline::before{content:attr(data-hover);position:absolute;left:0;width:100%;opacity:0;transform:translateY(-100%);transition:.3s ease;text-align:center}
@@ -210,6 +211,7 @@ ul{list-style:none}
 .logo-item img:hover{opacity:.7;filter:grayscale(0)}
 @keyframes logoScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes btnPulse{0%,100%{box-shadow:0 0 0 0 rgba(233,2,30,.45)}60%{box-shadow:0 0 0 10px rgba(233,2,30,0)}}
+@keyframes outlinePulse{0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,.5)}60%{box-shadow:0 0 0 10px rgba(255,255,255,0)}}
 @keyframes fabPulse{0%,100%{box-shadow:0 0 0 0 rgba(233,2,30,.5)}60%{box-shadow:0 0 0 12px rgba(233,2,30,0)}}
 @keyframes svcPulse{0%,100%{box-shadow:0 0 0 0 rgba(233,2,30,0)}50%{box-shadow:0 0 0 8px rgba(233,2,30,.38)}}
 @keyframes imgGlow{0%,100%{box-shadow:0 0 0 1.5px rgba(233,2,30,0),0 0 8px rgba(233,2,30,0)}50%{box-shadow:0 0 0 1.5px rgba(233,2,30,.55),0 0 16px rgba(233,2,30,.15)}}
@@ -378,6 +380,7 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   .svc:nth-child(3){animation-delay:1.2s}
   .svc:nth-child(4){animation-delay:1.8s}
   .dif-grid{grid-template-columns:1fr 1fr}
+  .dif-card{padding:24px 20px}
   .counter-grid{grid-template-columns:1fr 1fr}
   .counter-cell{border-bottom:1px solid rgba(255,255,255,.06)}
   .counter-cell:nth-child(2n){border-right:none}
@@ -433,8 +436,9 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   .sobre-imgs img:last-child{width:42%;aspect-ratio:3/4;margin-bottom:0}
   /* Services: keep 2 columns */
   .s-grid{grid-template-columns:1fr 1fr}
-  /* Diferenciais: keep 2 columns */
-  .dif-grid{grid-template-columns:1fr 1fr}
+  /* Diferenciais: 1 column on small mobile */
+  .dif-grid{grid-template-columns:1fr;gap:12px}
+  .dif-card{padding:20px 18px}
   .foot-grid{grid-template-columns:1fr}
   #hero{height:88vh;min-height:560px}
   .hero-content{left:3%;right:3%;width:auto;transform:none;bottom:6%;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
