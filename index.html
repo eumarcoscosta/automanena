@@ -428,14 +428,17 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   .sec-h{font-size:clamp(26px,5vw,38px)}
 }
 @media(max-width:580px){
-  .s-grid{grid-template-columns:1fr}
-  .dif-grid{grid-template-columns:1fr}
-  .gal-grid{grid-template-columns:repeat(4,1fr)}
+  /* Sobre: keep side-by-side, adjust proportions */
+  .sobre-imgs img:first-child{width:58%;aspect-ratio:3/4}
+  .sobre-imgs img:last-child{width:42%;aspect-ratio:3/4;margin-bottom:0}
+  /* Services: keep 2 columns */
+  .s-grid{grid-template-columns:1fr 1fr}
+  /* Diferenciais: keep 2 columns */
+  .dif-grid{grid-template-columns:1fr 1fr}
   .foot-grid{grid-template-columns:1fr}
-  .sobre-imgs{flex-direction:column;gap:10px}
-  .sobre-imgs img:first-child,.sobre-imgs img:last-child{width:100%;aspect-ratio:16/9;margin-bottom:0}
-  #hero{height:65vh;min-height:420px}
+  #hero{height:68vh;min-height:420px}
   .hero-content{width:94%;bottom:14%}
+  .hero-h1{font-size:clamp(28px,8vw,42px)}
   #sobre{padding:28px 0}
   #counter{padding:20px 5%}
   #servicos{padding:28px 0}
@@ -444,6 +447,8 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   #faq{padding:28px 0}
   #mapa{padding:28px 0 0}
   .mapa-frame{height:240px}
+  .sec-h{font-size:clamp(24px,6vw,34px)}
+  details.faq-item summary{font-size:14px}
 }
 @media(min-width:1367px){
   #car-strip{background-attachment:fixed}
