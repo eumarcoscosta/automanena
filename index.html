@@ -381,11 +381,12 @@ details.faq-item[open] summary::after{content:'−'}
   color:#fff;cursor:pointer;text-decoration:none;min-width:180px;
 }
 .btn-gmaps{background:#1A73E8;animation:gmapsPulse 2.4s ease-in-out infinite}
-.btn-waze{background:#33CCFF;animation:wazePulse 2.4s ease-in-out infinite}
 .btn-gmaps:hover{background:#1558b0}
-.btn-waze:hover{background:#00aadd}
 @keyframes gmapsPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,115,232,.5)}60%{box-shadow:0 0 0 10px rgba(26,115,232,0)}}
-@keyframes wazePulse{0%,100%{box-shadow:0 0 0 0 rgba(51,204,255,.5)}60%{box-shadow:0 0 0 10px rgba(51,204,255,0)}}
+@keyframes wazePulse{0%,100%{box-shadow:0 0 0 0 rgba(41,195,246,.5)}60%{box-shadow:0 0 0 10px rgba(41,195,246,0)}}
+.btn-waze-img{display:inline-flex;align-items:center;justify-content:center;border-radius:40px;overflow:hidden;animation:wazePulse 2.4s ease-in-out infinite;transition:opacity .2s}
+.btn-waze-img img{height:42px;width:auto;display:block}
+.btn-waze-img:hover{opacity:.85}
 .gal-hd{text-align:center;margin-bottom:32px;padding:0 5%}
 .gal-grid{display:grid;grid-template-columns:repeat(8,1fr)}
 .gal-item{overflow:hidden;position:relative;aspect-ratio:1/1}
@@ -996,9 +997,8 @@ footer{background:var(--dark3);padding:50px 5% 24px}
       <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       Google Maps
     </a>
-    <a href="https://waze.com/ul?q=R.+Campos+Verdes+286,+2645-423+Alcabideche,+Portugal&navigate=yes" target="_blank" rel="noopener" class="btn-waze">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2a9.93 9.93 0 00-7 2.91A9.93 9.93 0 002 12c0 5.52 4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
-      Waze
+    <a href="https://waze.com/ul?q=R.+Campos+Verdes+286,+2645-423+Alcabideche,+Portugal&navigate=yes" target="_blank" rel="noopener" class="btn-waze-img">
+      <img src="images/waze-btn.png" alt="Waze">
     </a>
   </div>
 </section>
