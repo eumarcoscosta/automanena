@@ -373,7 +373,7 @@ details.faq-item[open] summary::after{content:'−'}
 .mapa-hd{text-align:center;margin-bottom:32px;padding:0 5%}
 .mapa-frame{position:relative;width:100%;height:420px;overflow:hidden}
 .mapa-frame iframe{width:100%;height:100%;border:0;display:block}
-.mapa-btn-wrap{display:flex;justify-content:center;align-items:center;padding:28px 5% 40px;gap:16px;flex-wrap:wrap}
+.mapa-btn-wrap{display:flex;justify-content:center;align-items:center;padding:28px 5% 40px;gap:16px}
 .btn-map-img{
   display:inline-flex;align-items:center;justify-content:center;
   width:215px;height:50px;
@@ -504,6 +504,8 @@ footer{background:var(--dark3);padding:50px 5% 24px}
   .sec-h{font-size:clamp(26px,5vw,38px)}
 }
 @media(max-width:580px){
+  .mapa-btn-wrap{gap:10px}
+  .btn-map-img{width:158px;height:37px}
   /* Sobre: keep side-by-side, adjust proportions */
   .sobre-imgs img:first-child{width:58%;aspect-ratio:3/4}
   .sobre-imgs img:last-child{width:42%;aspect-ratio:3/4;margin-bottom:0}
