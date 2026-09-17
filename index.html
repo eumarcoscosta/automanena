@@ -377,10 +377,8 @@ details.faq-item[open] summary::after{content:'−'}
 .btn-map-img{display:inline-block;line-height:0;text-decoration:none;transition:opacity .2s}
 .btn-map-img img{height:48px;width:auto;display:block}
 .btn-map-img:hover{opacity:.82}
-.btn-gmaps-img{animation:gmapsPulse 2.4s ease-in-out infinite}
-.btn-waze-img{animation:wazePulse 2.4s ease-in-out infinite}
-@keyframes gmapsPulse{0%,100%{filter:drop-shadow(0 0 0px rgba(66,133,244,0))}60%{filter:drop-shadow(0 0 8px rgba(66,133,244,.7))}}
-@keyframes wazePulse{0%,100%{filter:drop-shadow(0 0 0px rgba(41,195,246,0))}60%{filter:drop-shadow(0 0 8px rgba(41,195,246,.7))}}
+.btn-gmaps-img,.btn-waze-img{animation:btnPulse 2.6s ease-in-out infinite}
+@keyframes btnPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
 .gal-hd{text-align:center;margin-bottom:32px;padding:0 5%}
 .gal-grid{display:grid;grid-template-columns:repeat(8,1fr)}
 .gal-item{overflow:hidden;position:relative;aspect-ratio:1/1}
