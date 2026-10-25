@@ -1,117 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+<!doctype html>
+<html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Auto Manena — Em Manutenção</title>
-<meta name="robots" content="noindex,nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --navy: #0d1b2a;
-  --gold: #c9933a;
-  --white: #ffffff;
-  --text: #e8e4de;
-  --muted: rgba(232,228,222,.5);
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html, body {
-  min-height: 100%;
-  background: var(--navy);
-  font-family: 'Jost', sans-serif;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-}
-.wrap {
-  text-align: center;
-  max-width: 480px;
-}
-.icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 28px;
-  opacity: .85;
-}
-.rule {
-  width: 40px;
-  height: 2px;
-  background: var(--gold);
-  margin: 0 auto 28px;
-}
-.tag {
-  font-size: 10px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 600;
-  margin-bottom: 14px;
-  display: block;
-}
-h1 {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 1.35;
-  margin-bottom: 16px;
-  color: var(--white);
-}
-h1 strong { font-weight: 600; }
-p {
-  font-size: 14px;
-  line-height: 1.8;
-  color: var(--muted);
-  margin-bottom: 32px;
-}
-.cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--gold);
-  color: var(--white);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .04em;
-  padding: 13px 26px;
-  border-radius: 8px;
-  transition: opacity .15s;
-}
-.cta:hover { opacity: .85; }
-.cta svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
-.footer {
-  margin-top: 48px;
-  font-size: 11px;
-  color: rgba(232,228,222,.28);
-  letter-spacing: .04em;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Automanena</title>
+  <link rel="icon" type="image/png" href="images/logo/logo-automanena.png">
+  <link rel="apple-touch-icon" href="images/logo/logo-automanena.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Oxanium:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #E9021E;
+      --dark: #121212;
+      --dark2: #1c1c1c;
+      --white: #fff;
+      --gray: #888;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--dark);
+      color: var(--white);
+      font-family: 'Manrope', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100dvh;
+      padding: 32px 24px;
+      padding-top: max(32px, env(safe-area-inset-top));
+      padding-bottom: max(32px, env(safe-area-inset-bottom));
+      text-align: center;
+    }
+
+    .logo {
+      width: 180px;
+      max-width: 60vw;
+      margin-bottom: 48px;
+      opacity: 0.95;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--red);
+      border-radius: 2px;
+      margin: 0 auto 32px;
+    }
+
+    .title {
+      font-family: 'Oxanium', sans-serif;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+      font-weight: 400;
+      color: var(--gray);
+      max-width: 380px;
+      line-height: 1.7;
+    }
+
+    .dot {
+      display: inline-block;
+      color: var(--red);
+    }
+
+    .footer {
+      position: fixed;
+      bottom: max(20px, env(safe-area-inset-bottom));
+      font-size: 0.78rem;
+      color: #444;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --dark: #f5f5f5;
+        --dark2: #e8e8e8;
+        --white: #111;
+        --gray: #555;
+      }
+      .footer { color: #bbb; }
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-
-  <svg class="icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="32" cy="32" r="30" stroke="#c9933a" stroke-width="2"/>
-    <path d="M32 18v16l9 5" stroke="#c9933a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-
-  <div class="rule"></div>
-  <span class="tag">Brevemente de volta</span>
-
-  <h1>Estamos a fazer<br><strong>melhorias no site</strong></h1>
-
-  <p>O nosso site está temporariamente em manutenção.<br>
-  Para orçamentos e marcações, entre em contacto<br>connosco directamente pelo WhatsApp.</p>
-
-  <a class="cta" href="https://wa.me/351964814978" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-    Falar pelo WhatsApp
-  </a>
-
-  <div class="footer">Auto Manena · Alcabideche, Cascais</div>
-
-</div>
+  <img src="images/logo/logo-automanena.png" alt="Automanena" class="logo">
+  <div class="divider"></div>
+  <h1 class="title">Site em Manutenção<span class="dot">.</span></h1>
+  <p class="subtitle">Estamos a trabalhar para melhorar a sua experiência. Voltamos em breve.</p>
+  <p class="footer">Automanena &mdash; Alcabideche</p>
 </body>
 </html>
